@@ -4,7 +4,7 @@ pipeline {
     stages {
       stage('Docker Build') {
           steps { 
-              docker build -f nginx.df 
+              sh 'docker build -f nginx.df' 
           }
        }
 
